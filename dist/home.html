@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,53 +8,161 @@
     <link rel="stylesheet" href="./ui.css">
     <link rel="stylesheet" href="./tailwind.css">
 </head>
+
 <body>
     <!-- navbar -->
 
-    <header >
-            <nav>
-                <h1 class="text-2xl">Muhammad Saifi</h1>
-                <ul id="menuList">
-                    <li><a href=""><span style="color: var(--primary-Purple);">Home</span></a></li>
-                    <li><a href="">About Me</a></li>
-                    <li><a href="">Skils</a></li>
-                    <li><a href="">Protfolio</a></li>
-                    <li><a href="">Career</a></li>
-                    <li><a href="">Recommendations</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-                <img id="menu" class="float-right" src="./icon/menu_moblie.png" alt="">
+    <header>
+        <nav>
+            <h1 class="text-2xl">Muhammad Saifi</h1>
+            <ul id="menuList">
+                <li><a href=""><span style="color: var(--primary-Purple);">Home</span></a></li>
+                <li><a href="">About Me</a></li>
+                <li><a href="">Skils</a></li>
+                <li><a href="">Protfolio</a></li>
+                <li><a href="">Career</a></li>
+                <li><a href="">Recommendations</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <img id="menu" class="float-right" src="./icon/menu_moblie.png" alt="">
 
-            </nav>
+        </nav>
     </header>
     <main style="margin-left: 40px; margin-right: 40px;">
-        <div >
-            <button  class="box_hello text-white mb-4">👋 Welcome</button>
+        <div>
+            <button class="box_hello text-white mb-4">👋 Welcome</button>
             <h1 class="text-4xl text-white w-72 mb-4"> I am , Muhammad Saifi</h1>
             <p class="details_main mb-4"> Full Stack Developer , Graphic</p>
-            <div id="grub_downland_cv_main_copy" >
+            <div id="grub_downland_cv_main_copy">
                 <p class="cv ">Download my Cv <img class="w-6" src="./icon/ArrowLineDown.svg" alt=""></p>
                 <button class="but_WhatsApp mt-3"><img src="./icon/WhatsappLogoPurple.png" alt="">WhatsApp</button>
             </div>
             <div id="grub_icon_github_linkedln" class="flex flex-row justify-between" style=" width: 30%;">
-                <img  src="./icon/linkedin.png" alt="">
-                <img  src="./icon/github.png" alt="">
+                <img src="./icon/linkedin.png" alt="">
+                <img src="./icon/github.png" alt="">
             </div>
         </div>
         <div>
-            <div id="grub_icon_github_linkedln_copy"  class="flex flex-row justify-center space-x-5  " >
-                <img   src="./icon/linkedin.png" alt="">
-                <img  src="./icon/github.png" alt="">
+            <div id="grub_icon_github_linkedln_copy" class="flex flex-row justify-center space-x-5  ">
+                <img src="./icon/linkedin.png" alt="">
+                <img src="./icon/github.png" alt="">
             </div>
             <img src="./img/img_main_hero.svg" alt="">
 
         </div>
-        <div id="grub_downland_cv_main_original" >
+        <div id="grub_downland_cv_main_original">
             <p class="cv ">Download my Cv <img class="w-6" src="./icon/ArrowLineDown.svg" alt=""></p>
             <button class="but_WhatsApp mt-3"><img src="./icon/WhatsappLogoPurple.png" alt="">WhatsApp</button>
         </div>
     </main>
-    
+    <section id="skils">
+        <div class="box_skils">
+            <div class="card_skils">
+                <img src="./icon/CodeIcon.svg" alt="">
+                <p class="weight_400">2 years</p>
+                <h2 class="text-4xl text-white">Development</h2>
+            </div>
+            <div class="card_skils_purple">
+                <img src="./icon/It.svg" alt="">
+                <p class="weight_400">3 years</p>
+                <h2 class="text-4xl text-white">Computer Science</h2>
+            </div>
+            <div class="card_skils">
+                <img src="./icon/Projects.svg" alt="">
+                <p class="weight_400">1 years</p>
+                <h2 class="text-4xl text-white">Office 365</h2>
+            </div>
+        </div>
+        <div class="oblong_skils">
+            <div>
+                <p class="text-sm" style="color: var(--primary-Purple);">career</p>
+                <h2 class="text-4xl" style="color: var(--primary-Purple);">Full Stack</h2>
+            </div>
+            <div>
+                <p class="text-sm" style="color: var(--primary-Purple);">experience</p>
+                <h2 class="text-4xl" style="color: var(--primary-Purple);">professional</h2>
+            </div>
+            <div>
+                <p class="text-sm" style="color: var(--primary-Purple);">completed projects</p>
+                <h2 class="text-4xl" style="color: var(--primary-Purple);">35 +</h2>
+            </div>
+        </div>
+
+    </section>
+    <section id="about_me">
+        <div id="img_about_me">
+            <img src="./img/img_man.jpg" alt="">
+        </div>
+        <div style="width: 500px;">
+            <h1 class="text-4xl text-white">Do you know me</h1>
+            <div class="text-white space-y-6">
+                <p>👋 Hello, I'm Mohammed Safi, and you can simply call me "Mohammed." Nice to meet you!</p>
+                <p>👨‍💻 I have been practicing the art of developing and programming user interfaces for over two
+                    years, working on crafting user experiences using technologies like JavaScript,Node js, and
+                    Typescript.</p>
+                <p>💡 My passion lies in crafting innovative user interfaces using frameworks like
+                    tailwindcss,bootstrap, and also sass, in addition to user experience design.</p>
+                <p>🚀 I always strive to achieve a small daily progress over the previous day, as continuous growth is
+                    my passion and goal.</p>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="header_portfolio flex w-full  " >
+            <h1 class="text-4xl text-white">Completed projects</h1>
+            <button class="but_WhatsApp"> programming</button>
+        </div>
+        <div class="box_cards_card_project">
+            <div class="card_project">
+                <h1 class="text-4xl text-white">Github.com</h1>
+                <p class="text-gray-200 text-sm">This project is a product management page interface application,
+                    developed using modern technologies such as Tailwind CSS and Node.js. This project aims to provide
+                    developers with hands-on experience in building user interfaces and developing web applications
+                    using advanced technologies.</p>
+                <div class="grub_but mt-10 space-x-4">
+                    <button class="but_online">Online</button>
+                    <button class="but_normal_purple ">Node js</button>
+
+                </div>
+                <img class="img_card_project mt-10" src="./img/computer.svg" alt="" srcset="">
+            </div>
+            <div class="card_project">
+                <h1 class="text-4xl text-white">Github.com</h1>
+                <p class="text-gray-200 text-sm">My programming project is an advanced website developed using modern
+                    techniques in the field of web application development. The project aims to provide a distinctive
+                    user interface for users, along with the capability to manage user sessions using Node.js and
+                    Passport.js.
+                </p>
+                <div class="grub_but mt-10 space-x-4">
+                    <button class="but_normal_purple">Passport.js</button>
+                    <button class="but_normal_purple ">Node js</button>
+
+                </div>
+                <img class="img_card_project mt-10" src="./img/computer_4.svg" alt="" srcset="">
+            </div>
+            <div class="card_project">
+                <h1 class="text-4xl text-white">Github.com</h1>
+                <p class="text-gray-200 text-sm">I developed a website for Ammar Al-Karki, my first client project. The
+                    site showcases his work and personality using modern web technologies. It's a significant step in my
+                    developer journey, translating client vision into a digital presence.
+
+
+
+
+                </p>
+                <div class="grub_but_customize mt-20 space-x-2">
+                    <button class="but_normal_purple">Html5</button>
+                    <button class="but_normal_purple ">Css</button>
+                    <button class="but_normal_purple ">JavaScript</button>
+
+
+                </div>
+                <img class="img_card_project mt-10" src="./img/computer_3.svg" alt="" srcset="">
+            </div>
+        </div>
+
+    </section>
 </body>
 <script src="./script.js"></script>
+
 </html>

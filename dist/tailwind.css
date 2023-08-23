@@ -679,8 +679,16 @@ video {
   margin-bottom: 1rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .mt-3 {
@@ -792,6 +800,10 @@ video {
 
 .w-72 {
   width: 18rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .flex-shrink {
@@ -1312,10 +1324,22 @@ video {
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-x-5 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1.25rem * var(--tw-space-x-reverse));
   margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
 .space-y-reverse > :not([hidden]) ~ :not([hidden]) {
@@ -1917,6 +1941,11 @@ video {
   line-height: 2.5rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1996,6 +2025,11 @@ video {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -2333,6 +2367,8 @@ video {
 body {
   background-color: var(--primary-Dark);
   height: 200vh;
+  border: none;
+  /* إزالة الحدود */
 }
 
 header {
@@ -2387,7 +2423,7 @@ main {
   align-items: center;
 }
 
-.but_WhatsApp{
+.but_WhatsApp {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2412,16 +2448,177 @@ main {
   text-align: justify;
 }
 
-#grub_downland_cv_main_copy{
+#grub_downland_cv_main_copy {
   display: none;
 }
 
-#grub_downland_cv_main_original{
+#grub_downland_cv_main_original {
   display: block;
 }
 
-#grub_icon_github_linkedln_copy{
+/* sections skils */
+
+#skils {
+  height: 130vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box_skils {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 900px;
+  margin-bottom: 20px;
+}
+
+.card_skils {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 246px;
+  height: 200px;
+  border-radius: 16px;
+  border: 1px solid rgba(123, 74, 226, 0.50);
+  flex-shrink: 0;
+}
+
+.card_skils_purple {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 246px;
+  height: 200px;
+  border-radius: 16px;
+  background: rgba(123, 74, 226, 0.10);
+  flex-shrink: 0;
+}
+
+.oblong_skils {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 898px;
+  height: 110px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: rgba(123, 74, 226, 0.10);
+}
+
+.weight_400 {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* Section About Me */
+
+#about_me {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 130vh;
+}
+
+#img_about_me {
+  width: 500px;
+  height: 600px;
+  position: relative;
+  top: 120px;
+}
+
+#img_about_me img {
+  border-radius: 16px;
+}
+
+/* Section Portfoilo */
+
+#portfolio {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: column;
+  height: 130vh;
+}
+
+.card_project {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 360px;
+  height: 540px;
+  border-radius: 16px;
+  border: 1px solid rgba(123, 74, 226, 0.50);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.box_cards_card_project {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.but_online {
+  width: 83px;
+  height: 30px;
+  background-color: #4AE2904D;
+  color: #4AE290;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.but_normal_purple {
+  color: #7B4AE2;
+  width: 106px;
+  height: 30px;
+  flex-shrink: 0;
+  fill: rgba(123, 74, 226, 0.10);
+  border-radius: 6px;
+  background-color: #7B4AE21A;
+}
+
+.img_card_project {
+  border-radius: 6px;
+  width: 300px;
+  height: 200px;
+}
+
+/* نستعمل ذالك الكلاس عندما تتحطى عدد ازرار اكثر من 2 */
+
+.grub_but {
+  height: 100%;
+  position: relative;
+  top: 30px;
+}
+
+.grub_but_customize {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  top: 20px;
+}
+
+#grub_icon_github_linkedln_copy {
   display: none;
+}
+
+.header_portfolio{
+  justify-content: space-between;
+  margin-bottom: 40px;
+  width: 92%;
 }
 
 @media screen and (max-width:861px) {
@@ -2461,19 +2658,19 @@ main {
 
   /* main content */
 
-  main{
+  main {
     flex-direction: column-reverse;
   }
 
-  #grub_icon_github_linkedln{
+  #grub_icon_github_linkedln {
     display: none;
   }
 
-  #grub_icon_github_linkedln_copy{
+  #grub_icon_github_linkedln_copy {
     display: flex;
   }
 
-  #grub_downland_cv_main_copy{
+  #grub_downland_cv_main_copy {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2481,8 +2678,44 @@ main {
     width: 100%;
   }
 
-  #grub_downland_cv_main_original{
+  #grub_downland_cv_main_original {
     display: none;
+  }
+
+  .oblong_skils {
+    display: none;
+  }
+
+  .box_skils {
+    display: flex;
+    flex-direction: column;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 800px;
+  }
+
+  /* Section About Me */
+
+  #about_me {
+    flex-direction: column;
+    height: 160vh;
+  }
+
+  /* Section Cards */
+
+  .box_cards_card_project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 80px;
+    width: 100%;
+  }
+
+  #portfolio{
+    flex-direction: column;
+    justify-content: space-around;
+    height: 370vh;
   }
 }
 

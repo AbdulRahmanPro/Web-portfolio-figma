@@ -5,3 +5,4 @@
         console.log(2)
         menulist.classList.toggle("open")
     })
+    
