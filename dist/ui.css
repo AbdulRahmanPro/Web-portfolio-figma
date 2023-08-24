@@ -277,6 +277,26 @@ main {
     width: 92%;
 }
 
+
+/* Section footer */
+
+#Connect{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box_Connect{
+    width: 60%;
+    height: 80%;
+
+}
+footer{
+    background-color: #7B4AE21A;
+    height: 80px;
+}
+
+
 @media screen and (max-width:861px) {
     nav ul {
         flex-direction: column;
@@ -373,7 +393,7 @@ main {
 
 }
 
-@media screen and (min-width:971px) {
+@media screen and (min-width:870px) {
     nav ul {
         display: flex;
         justify-content: center;
@@ -392,6 +412,20 @@ main {
 
     nav ul.open {
         display: flex;
+    }
+    /* Section Cards */
+    .box_cards_card_project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 80px;
+        width: 100%;
+    }
+    #portfolio{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 370vh;
     }
 
 

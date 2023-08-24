@@ -802,6 +802,10 @@ video {
   width: 18rem;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -1316,6 +1320,18 @@ video {
 
 .justify-items-stretch {
   justify-items: stretch;
+}
+
+.space-x-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-12 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(3rem * var(--tw-space-x-reverse));
+  margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1875,6 +1891,10 @@ video {
      object-fit: scale-down;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2030,6 +2050,16 @@ video {
 .text-gray-200 {
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -2621,6 +2651,25 @@ main {
   width: 92%;
 }
 
+/* Section footer */
+
+#Connect{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box_Connect{
+  width: 60%;
+  height: 80%;
+}
+
+footer{
+  background-color: #7B4AE21A;
+  height: 80px;
+}
+
 @media screen and (max-width:861px) {
   nav ul {
     flex-direction: column;
@@ -2719,7 +2768,7 @@ main {
   }
 }
 
-@media screen and (min-width:971px) {
+@media screen and (min-width:870px) {
   nav ul {
     display: flex;
     justify-content: center;
@@ -2738,6 +2787,23 @@ main {
 
   nav ul.open {
     display: flex;
+  }
+
+  /* Section Cards */
+
+  .box_cards_card_project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 80px;
+    width: 100%;
+  }
+
+  #portfolio{
+    flex-direction: column;
+    justify-content: space-around;
+    height: 370vh;
   }
 }
 
